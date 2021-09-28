@@ -1,0 +1,93 @@
+{%extends 'base.html'%}
+{%load static %}
+{%block title%}CheckUp{%endblock%}
+{%block css%}
+<link
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+rel="stylesheet"
+/>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet" href='{%static "checkup.css"%}' />
+
+{%endblock%}
+{%block body%}
+
+<div class="message shadow" style="text-align: center;">
+  <div class="welcome-img">
+    <img src="{%static 'check.svg' %}" alt="boy" height="290" width="270"/>
+  </div>
+  <h3>Choose appropriate Symptoms:</h3>
+  <form action="/disease/" method="post">{%csrf_token%}
+    <div class="form-group">
+      <div class="select-it">
+        <select class="js-example-basic-multiple" multiple="multiple" id="select-disease" data-live-search="true" name="sym"
+          id="sym" required>
+          <option data-tokens="" value=""></option>
+        </select>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-success mybtn">Check</button>  
+  </form>
+  
+</div>
+<style>
+#select-disease{
+  width: 100vh;
+}
+
+@media (max-width: 700px)
+{
+  .message{
+    height: 100vh;
+  }
+
+  #select-disease {
+    width: 100%;
+  }
+}
+.message{
+  width: 100%;
+  height:120vh;
+  margin: 0;
+    /* border-radius: 1.6rem;
+    box-shadow: 0 13px 30px rgba(0, 0, 0, 0.12), 0 14px 25px rgba(0, 0, 0, 0.24); */
+
+  }
+
+  .navbar{
+  background: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+}
+</style>
+{%endblock%}
+{%block script%}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+  let dropdown = $('#select-disease');
+
+  dropdown.empty();
+
+  dropdown.append('<option disabled>Choose your Symptoms</option>');
+
+  const url = "{%static 'sym.json'%}";
+
+  $.getJSON(url, function (data) {
+    $.each(data, function (key, entry) {
+      dropdown.append($('<option></option>').attr('data-tokens', entry.name).text(entry.name));
+    })
+  });
+
+  $(document).ready(function () {
+    $('.js-example-basic-multiple').select2({
+
+      allowClear:true,
+      placeholder:'Select Symptoms',
+    }
+    );
+  });
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+{%endblock%}
+
+</html>

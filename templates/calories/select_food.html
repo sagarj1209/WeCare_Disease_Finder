@@ -1,0 +1,75 @@
+{% extends 'base.html' %} {% block body %} {%load static%}
+<link rel="stylesheet" href='{%static  "base.css"%}' />
+<style>
+  .external-div{
+    height: 90vh;
+    margin-top: 10vh;
+  }
+  </style>
+
+  <div class="external-div">
+    <nav id="navbar-primary" class="navbar navbar-expand-lg navbar-default active" role="navigation">
+  
+      <!-- Brand and toggle get grouped for better mobile display -->
+   
+   <div class="container">
+            <div class="navbar-header">
+              <!-- Brand and toggle get grouped for better mobile display -->
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#resNav"  id='navbar-toggler'>
+              <span class="navbar-toggler-icon" id="ham"></span>
+            </button>
+          </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="resNav">
+              <ul class="navbar-nav justify-content-center">
+                {% with url_name=request.resolver_match.url_name %}
+                <li class="nav-item"><a class="nav-link  {% if url_name == 'home' %} active{% endif %}" href={% url "home" %}>Home</a></li>
+                <li class="nav-item"><a class="nav-link {% if url_name == 'profile' %} active{% endif %}" href={% url "profile" %}>Profile</a></li>
+                <li class="nav-item"><a class="nav-link {% if url_name == 'add_food' %} active{% endif %}" href={% url "add_food" %}>Add Food</a></li>
+                <li class="nav-item"><a class="nav-link {% if url_name == 'select_food' %} active{% endif %}" href={% url "select_food" %}>Select Food</a></li>
+                {% endwith %}
+              </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+        
+   </div>
+  </nav>
+  
+  <div class="login mt-0">
+    <div class="login-screen">
+      <div class="app-title">
+        <h1 class="headline">Select Food</h1>
+      </div>
+  
+      <form method="POST" action="" class="login-form">
+        {% csrf_token %}
+        <h5 class="form-labels">{{ form.as_p }}</h5>
+        <input class="btn login_btn pt-2" type="submit" value="select" />
+      </form>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <h1 class="headline text-center pb-3">All Food Items</h1>
+    <table class="table table-bordered text-center">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Food Name</th>
+          <th scope="col">Calories</th>
+          <th scope="col">Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for food in food_items %}
+        <tr>
+          <td>{{ food.name }}</td>
+          <td>{{ food.calorie }}</td>
+          <td>{{ food.quantity }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  </div>
+
+
+{% endblock body %}

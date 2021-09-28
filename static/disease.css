@@ -1,0 +1,38 @@
+/* disease starts */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eae7dc;
+}
+.each-disease{
+    font-size: 1.3rem;
+    background-color: white;
+    margin: 1.1rem;
+    padding: 0.6rem;
+    border: solid;
+    border-radius: 19px;
+}
+
+.disname{
+    margin: 0.4rem;
+}
+
+@media (max-width: 768px) {
+	.navbar-collapse {
+		background-color: rgb(255, 255, 255);
+	}
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    background-color: #0cb8b6;
+    padding: 2rem 0;
+    position: fixed;
+  }
+
+ 
+  
+
+
+/* disease ends */

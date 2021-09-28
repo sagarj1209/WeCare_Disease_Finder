@@ -1,0 +1,91 @@
+{%extends 'base.html'%} {%load static %} {%block title%}CheckUp{%endblock%}
+{%block css%}
+<link
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="{%static 'checkup.css' %}" />
+
+{%endblock%} {%block body%}
+
+<div class="wrapper">
+  <div class="message">
+    <div class="welcome-img mt-4">
+      <img src="{%static 'boy.svg' %}" alt="boy" width="270px" />
+    </div>
+    <div class="left">
+      <div class="welcome-text">
+        <div class="heading">
+          <h2>Hello and Welcome !</h2>
+        </div>
+        <div class="para">
+          You’re about to use a short, safe and anonymous health checkup. Our
+          system will analyse your answers and will provide you with most
+          accurate results based on your symptoms.
+        </div>
+      </div>
+      <hr size="7" style="background-color: black" />
+    </div>
+    <button
+      class="btn btn-success mybtn"
+      id="newbutton"
+      onclick="window.location.href='/info'"
+    >
+      Next
+    </button>
+
+    <div class="terms">
+      <h2>Terms and Conditions</h2>
+      <ol>
+        <li>
+          <p>
+            <span>This application is still in beta stage</span> so checkup done
+            here is not 100% accurate.
+          </p>
+        </li>
+        <li>
+          <p>
+            <span>Your data is our responsibility.</span>Any of your data will
+            be disclosed.
+          </p>
+        </li>
+        <li>
+          <p>
+            <span>Provide Accurate Information.</span>the more accurate you're
+            be the more accurate we're
+          </p>
+        </li>
+      </ol>
+      <p>
+        <input
+          type="checkbox"
+          onchange="document.getElementById('newbutton').disabled = !this.checked;"
+        />I read and accept Terms of Service and Privacy Policy.
+      </p>
+    </div>
+  </div>
+  <br />
+</div>
+
+<style>
+  .message {
+    width: 100%;
+    margin: 0;
+    height: 120vh;
+  }
+
+  .navbar {
+    background: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+  }
+</style>
+
+{%endblock%} {%block script%}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+{%endblock%}

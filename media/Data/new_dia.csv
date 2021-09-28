@@ -1,0 +1,111 @@
+index,_id,diagnose
+0,5,ACE inhibitor induced coughblood pressure medication side effectDrug-induced coughDrug reaction: ACE inhibitor
+1,14,Acute angle closure glaucomaincreased inner eye pressure
+2,25,Alcoholism
+3,26,Allergic reaction
+4,71,Autoimmune disease
+5,82,Basilar artery migraineheadache
+6,85,Behcets diseasesmall blood vessel inflammation disorder
+7,98,Blepharitiseyelid swelling
+8,107,Brain tumorcancer of the brain
+9,136,Cavernous sinus thrombosishead vein blood clot
+10,144,Cerebral contusionbruise of brain
+11,146,Cerebral vascular accidentstroke
+12,162,Cholangitisinflammation of the bile ducts
+13,163,Cholecystitisinflammation of the gallbladder
+14,164,Choledocholithiasisstone in bile duct
+15,165,Cholelithiasisgallstones
+16,172,Cirrhosisliver failure and scarring
+17,186,Conjunctivitispink eye
+18,192,Corneal abrasionscrape on eye
+19,193,Corneal foreign bodyobject in the eye
+20,213,Diabeteshigh blood sugar
+21,214,Diabetes mellitus type 2elevated blood sugar
+22,300,Foreign body in the eye
+23,319,Glaucomaelevated eye pressure
+24,330,Head trauma
+25,347,Hepatitisliver inflammation
+26,358,Hordeolumstye of eye
+27,370,Hyphematraumatic blood in eye
+28,405,Keratitisinflammation of cornea
+29,424,Leukemiablood cell cancer
+30,447,Malariamosquito transmitted illness
+31,454,Maxillary sinus carcinomasinus cancer
+32,468,Methyl alcohol intoxicationmethanol
+33,469,Migrainetype of headache
+34,483,Multiple sclerosisMS
+35,508,Nasopharyngeal carcinomatumor
+36,523,Ophthalmoplegiaeye muscle weakness
+37,524,Optic neuritisoptic nerve inflammation
+38,527,Orbital cellulitissoft tissue eye infection
+39,528,Orbital fracturebroken bone near the eye
+40,529,Orbital massgrowth near the eye
+41,545,Pancreatic cancertumor
+42,563,Periorbital cellulitisinfection around eye
+43,576,Pituitary tumor
+44,606,Primary sclerosing cholangitisbile duct disease
+45,638,Quaternary syphilislate stage syphilis
+46,641,Increased pressure in the skullraised intracranial pressure
+47,679,Sclerosing cholangitisprogressive bile duct disease 
+48,704,Sinusitissinus infection
+49,728,"Steven Johnson syndromerare, serious skin disorder"
+50,743,Syphilistreponema pallidum
+51,748,Temporal arteritisinflamed scalp artery
+52,756,Third cranial nerve disorderdisorder of eye movement
+53,774,Toxoplasma infectionToxoplasmosisparasite infection
+54,775,"Transient ischemic attackTIA, reversible stroke"
+55,777,Trauma
+56,799,"Uveitisiritis, eye inflammation"
+57,814,Vertebral- basilar artery insufficiencyinadequate blood flow to the back of the brainvertebro-basilar insufficiency
+58,829,"WarfarinCoumadin, Jantoven overdose"
+59,848,Seizureabnormal brain electrical activity
+60,852,Lymphomalymph node cancer
+61,867,Carotid artery stenosisneck artery narrowing
+62,870,Hydrocephalusbrain fluid build-up
+63,873,Cerebral aneurysmbrain artery dilation
+64,874,Pseudotumor cerebriincreased pressure in the skull
+65,879,Allergic conjunctivitisallergic reaction in the eye
+66,895,Hemochromatosisexcess iron disorder
+67,903,Wilsons diseasecopper accumulation in tissues
+68,918,RubellaGerman measles
+69,926,Subconjunctival hemorrhageblood covering white part of the eye
+70,951,Q feverflu-like bacterial illness
+71,992,Graves' diseaseoverproduction of thyroid hormone
+72,1001,"Angioedemaswelling of skin, lips, eyes"
+73,1003,Detached retinaretinal detachment
+74,1004,Posterior vitreous detachmentcommon eye abnormality
+75,1022,Cataractsclouding of the eye lens
+76,1026,Hemolytic anemiared blood cell destruction disorder
+77,1027,Pterygiumgrowth on the eye
+78,1052,Amaurosis fugaxmomentary vision loss in one eye
+79,1081,Gilbert's diseaseliver abnormality
+80,1083,Newborn jaundicenewborn skin discoloration
+81,1102,Macular degenerationchronic eye disease
+82,1108,Diabetic retinopathydiabetic eye disease
+83,1134,Miller Fisher Syndromerare nerve disease
+84,1136,Complex migrainemigraine with neurologic changes
+85,1249,Scleritisinflammation of the eye
+86,1255,Focal seizurepartial seizure
+87,1267,Gallbladder cancer
+88,1283,Farsightednesshyperopia/hypermetropia
+89,1295,Gallbladder and bile duct cancerGallbladder cancerbile duct cancer
+90,1299,Graves eye diseaseGraves ophthalmopathy
+91,1303,"Hemorrhagic strokeCVA, cerebrovascular accident"
+92,1305,Hepatitis A
+93,1315,Lacunar stroke
+94,1349,Presbyopiaaging vision
+95,1353,Retinitis pigmentosa
+96,1355,Retinoblastomapediatric eye cancer
+97,1357,Retrobulbar Neuritis
+98,1363,Takayasu's arteritisGiant cell arteritis of the young
+99,1365,Tay-Sachs disease
+100,1367,Tear duct infectionDacryocystitis
+101,1395,Conversion disorder
+102,1397,Strabismuscrossed eyes
+103,1461,Turner syndromegonadal dysgenesis
+104,1473,Retinopathy
+105,1475,Corneal ulcer
+106,1479,Blocked tear ductdacryostenosis
+107,1483,Aphakia
+108,1511,Night blindnessnyctalopia
+109,sym,

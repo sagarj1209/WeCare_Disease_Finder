@@ -1,0 +1,104 @@
+{%extends 'base.html'%} {%load static%} {%block title%}WeCare{%endblock%}
+{%block nav%}
+<section class="banner" id="banner">
+  <div class="bg-color">
+    {%endblock%} {%block body%}
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href='{%static "index1.css"%}' />
+    <link rel="stylesheet" href='{%static "style1.css"%}' />
+
+    <div class="container">
+      <div class="row">
+        <div class="banner-info">
+          <div class="banner-logo text-center">
+            <h1>WeCare</h1>
+          </div>
+          <div class="banner-text text-center">
+            <h1 class="white" style="color: beige">Check Up on your Desk</h1>
+            <p>
+              Finest way to check your symptoms and decide what your Body is
+              telling you.
+            </p>
+            <a href="/welcome" class="btn btn-appoint">Start Your CheckUp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--service-->
+<section id="service" class="section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <h2 class="ser-title">Our Service</h2>
+        <hr
+          class="botm-line"
+          style="background-color: rgb(160, 62, 62); height: 2px"
+        />
+        <p>
+          We are here to provide you all the updates on your health through
+          frequent News and through some videos as well .Visit our Checkup
+          section and try to find out what possible disease you're going
+          through.We also Provide Corona Tracker and Calories Tracker.
+        </p>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="service-info">
+          <div class="icon">
+            <i class="fa fa-stethoscope"></i>
+          </div>
+          <div class="icon-info">
+            <h4>Disease Detector</h4>
+            <p>
+              Find out by symptoms which are the possible diseases that can
+              affect you.
+            </p>
+          </div>
+        </div>
+        <div class="service-info">
+          <div class="icon">
+            <i class="fa fa-ambulance"></i>
+          </div>
+          <div class="icon-info">
+            <h4>Corona Tracker</h4>
+            <p>
+              Find out overall corona casses from all over the world and filter
+              them by countries.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="service-info">
+          <div class="icon">
+            <i class="fa fa-user-md"></i>
+          </div>
+          <div class="icon-info">
+            <h4>Calories Tracker</h4>
+            <p>
+              Track your calorie counter by adding/removing food items from your
+              diet.
+            </p>
+          </div>
+        </div>
+        <div class="service-info">
+          <div class="icon">
+            <i class="fa fa-medkit"></i>
+          </div>
+          <div class="icon-info">
+            <h4>Health News</h4>
+            <p>Get Live Health News Update In India.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%endblock%}
